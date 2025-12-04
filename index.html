@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Brand | Natural Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <!-- Replace with your logo image if needed -->
+        <a href="#">YourBrand</a>
+      </div>
+      <nav class="nav">
+        <a href="#hair-oils">Hair Oils</a>
+        <a href="#kits">Complete Kits</a>
+        <a href="#serums">Face Serums</a>
+        <a href="#about">About</a>
+        <a href="#values">Values</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>100% Natural, High Performance Care</h1>
+        <p>Create a short tagline for your brand here later.</p>
+        <button class="primary-btn">Shop Now</button>
+      </div>
+      <div class="hero-image">
+        <!-- Put a hero/banner image here later -->
+        <div class="hero-placeholder">Hero Image</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hair Oils Section -->
+  <section class="section" id="hair-oils">
+    <div class="container">
+      <h2 class="section-title">Super Powerful Hair Oils</h2>
+      <div class="product-grid">
+        <!-- Example empty card structure – duplicate and fill later -->
+        <div class="product-card" data-id="1">
+          <div class="product-image empty">Image</div>
+          <h3 class="product-name">Product Name</h3>
+          <p class="product-tagline">Short benefit line</p>
+          <p class="product-size">Size / quantity</p>
+          <p class="product-price">₹ 0.00</p>
+          <button class="secondary-btn add-to-cart-btn">Add to cart</button>
+        </div>
+
+        <!-- Add more product-card divs here as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Kits Section -->
+  <section class="section alt" id="kits">
+    <div class="container">
+      <h2 class="section-title">Complete Rituals</h2>
+      <div class="product-grid">
+        <div class="product-card" data-id="2">
+          <div class="product-image empty">Image</div>
+          <h3 class="product-name">Kit Name</h3>
+          <p class="product-tagline">Use case / concern</p>
+          <p class="product-size">Includes / size</p>
+          <p class="product-price">₹ 0.00</p>
+          <button class="secondary-btn add-to-cart-btn">Add to cart</button>
+        </div>
+        <!-- More kits here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Face Serums Section -->
+  <section class="section" id="serums">
+    <div class="container">
+      <h2 class="section-title">Probiotic Infused Face Serums</h2>
+      <div class="product-grid">
+        <div class="product-card" data-id="3">
+          <div class="product-image empty">Image</div>
+          <h3 class="product-name">Serum Name</h3>
+          <p class="product-tagline">Skin concern</p>
+          <p class="product-size">Size</p>
+          <p class="product-price">₹ 0.00</p>
+          <button class="secondary-btn add-to-cart-btn">Add to cart</button>
+        </div>
+        <!-- More serums here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section alt" id="about">
+    <div class="container about">
+      <div class="about-text">
+        <h2>Better Ingredients, Better Results</h2>
+        <p>Write about your brand philosophy here later.</p>
+        <p>Explain your ingredient philosophy and brand story in this area.</p>
+      </div>
+      <div class="about-image">
+        <div class="hero-placeholder">About Image</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section" id="values">
+    <div class="container">
+      <h2 class="section-title">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Transparency</h3>
+          <p>Describe your transparency policy here.</p>
+        </div>
+        <div class="value-card">
+          <h3>Results</h3>
+          <p>Describe your focus on performance here.</p>
+        </div>
+        <div class="value-card">
+          <h3>Safety</h3>
+          <p>Describe your safety and clean-formula approach here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cart-overlay">
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="icon-btn" id="close-cart">X</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <p class="cart-empty">Your cart is empty.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          Total: ₹ <span id="cart-total">0.00</span>
+        </div>
+        <button class="primary-btn" id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> YourBrand. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Razorpay Checkout Script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
