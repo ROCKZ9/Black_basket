@@ -83,7 +83,7 @@ function addToCart(id) {
 // Razorpay checkout
 function openRazorpayCheckout(amountInRupees) {
   const options = {
-    key: rzp_test_RnQFkkuZa7G4Wt, // TODO: replace with your live/test key
+    key: "rzp_test_RnQFkkuZa7G4Wt", // TODO: replace with your live/test key
     amount: amountInRupees * 100, // in paise
     currency: "INR",
     name: "YourBrand",
@@ -159,4 +159,5 @@ document.addEventListener("DOMContentLoaded", () => {
     openRazorpayCheckout(total);
   });
 });
+
 
